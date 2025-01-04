@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <!--        <TargetFramework>net8.0</TargetFramework>-->
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Spectre.Console" Version="0.45.1-preview.0.40"/>
+        <PackageReference Include="Spectre.Console.Cli" Version="0.45.1-preview.0.40"/>
+    </ItemGroup>
+    
+    <PropertyGroup Condition="$(Configuration)=='Release'">
+        <Version>0.0.1</Version>
+        
+        <Title>Spectre Liveinput</Title>
+        <Description>Console.Ask but live. React to the input in realtime</Description>
+
+        <PackageTags>Spectre.Console; Live input; Shell; TUI, CLI; Command Line Interface; C#; Dotnet; CommandApp; Spectre.Console.Cli</PackageTags>
+        <Authors>JKamsker</Authors>
+        <Copyright>JKamsker</Copyright>
+        <PackageProjectUrl>https://github.com/JKamsker/JKToolKit.Spectre.LiveInput</PackageProjectUrl>
+<!--        <PackageIcon>logo_small_128x128.png</PackageIcon>-->
+        <RepositoryUrl>https://github.com/JKamsker/JKToolKit.Spectre.LiveInput</RepositoryUrl>
+        <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+
+<!--        <PackageOutputPath>$(SolutionDir)\..\.artifacts\</PackageOutputPath>-->
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+        <Deterministic>True</Deterministic>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+<!--        <PackageIcon>logo_small_128x128.png</PackageIcon>-->
+<!--        <PackageReadmeFile>Readme.Nuget.md</PackageReadmeFile>-->
+
+        <!-- Symbols -->
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+        <!-- Add code -->
+        <IncludeSource>True</IncludeSource>
+    </PropertyGroup>
+
+</Project>
