@@ -2,6 +2,8 @@
 
 A extension for Spectre.Console that introduces **LiveInput**, enabling real-time user input feedback in console applications.
 
+![ezgif-4-c156370953](https://github.com/user-attachments/assets/0cd519b7-71a6-4cfd-8655-75c87c1b7628)
+
 ## 🚀 Features
 - **Real-time Input Handling**: Capture and display user input dynamically.
 - **Customizable UI Elements**: Style input display with Spectre.Console panels.
